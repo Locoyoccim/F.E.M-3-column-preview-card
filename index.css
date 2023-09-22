@@ -1,0 +1,130 @@
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --tranparentwithe: hsla(0, 0%, 100%, 0.75);
+    --verydarkgray: hsl(0, 0%, 95%);
+}
+body{
+    position: relative;
+    height: 1100px;
+    font-size: 15px;
+    background-color: var(--tranparentwithe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    width: 325px;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+}
+#sedan, #suv, #luxury{
+    height: 280px;
+    padding: 35px;
+    color: var(--tranparentwithe);
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    letter-spacing: 1.5px;
+    line-height: 23px;
+}
+#sedan{
+    background-color: var(--orange);
+}
+#suv{
+    background-color: var(--darkcyan);
+}
+#luxury{
+    background-color: var(--verydarkcyan);
+}
+h1{
+    font-size: 700;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display' ;
+}
+.learn1{
+    background-color: white;
+    color: var(--orange);
+    height: 40px;
+    border-radius: 20px;
+    width: 130px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    margin: 25px 0 0 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+.learn2{
+    background-color: white;
+    color: var(--darkcyan);
+    height: 40px;
+    border-radius: 20px;
+    width: 130px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    margin: 25px 0 0 0;
+    font-weight: 450;
+    cursor: pointer;
+}
+.learn3{
+    background-color: white;
+    color: var(--verydarkcyan);
+    height: 40px;
+    border-radius: 20px;
+    width: 130px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    margin: 25px 0 0 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+.learn1:hover{
+    color: white;
+    border: 2px white solid;
+    background-color: var(--orange);
+}
+.learn2:hover{
+    color: white;
+    border: 2px white solid;
+    background-color: var(--darkcyan);
+}
+.learn3:hover{
+    color: white;
+    border: 2px white solid;
+    background-color: var(--verydarkcyan);
+}
+@media screen and (min-width: 660px) {
+    body{
+        position: absolute;
+        width: 1440px;
+        height: 100%;
+        justify-content: center;
+         align-items: center;
+    }
+    section{
+        display: flex;
+        width: 1000px;
+        height: 500px;
+        border-radius: 20px;
+    }
+    #sedan, #suv, #luxury{
+        height: auto;
+    }
+    .learn1, .learn2, .learn3{
+        margin-top: 170px;
+    }
+    #sedan{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    #luxury{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+}
